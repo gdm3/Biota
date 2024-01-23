@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Discover Biology</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="video.css" rel="stylesheet">
+  <meta name="google" content="notranslate">
+
+</head>
+
+<body>
+  <header class="topbar-nav">
+  </header>
+  <div class="main" style="display: flex; justify-content: center;">
+    <!--
+    <div class="sidebar">
+      <div class="course-name-holder">
+        <p id="course-name"></p>
+      </div>
+      <div class="course-content-holder">
+        <button onclick="populateVideo('bio-1', 'load')" style="border-top: 1px solid #d1d1d1;" id="sidebar-button-video-1" class="sidebar-button">Intro to Biology - 1</button>
+        <button id="sidebar-button-q-1" onclick="populateVideo('bio-1', 'load-q')" class="sidebar-button">Questions - 1</button>
+      </div>
+    </div>
+    -->
+
+    
+    <!-- actual video - exists by deafult-->
+    <div class="video-holder">
+      <iframe id="yt-video" width="300" height="200" src="https://www.youtube.com/embed/dk8p6uXT1GQ?si=ktUI_PJxiMIPR1GT"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+    <!-- questions - hidden by deafult -->
+  </div>
+  <script src="script.js"></script>
+  <script src="utils.js"></script>
+  <script>generateDefaults();</script>
+
+  <script>populateVideo("bio-1", "load");</script>
+</body>
+
+</html>
